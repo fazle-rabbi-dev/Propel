@@ -17,7 +17,7 @@ It focuses on `clean structure`, `responsive layout`, and maintainable code.
 
 ## 🔗 Live Demo
 
-[🌍 Visit Site](https://propel.vercel.app/)
+[🌍 Visit Site](https://propel-alpha.vercel.app/)
 
 ## 🧰 Tech Stack
 
@@ -39,7 +39,7 @@ src/
 ┣ components/
 ┣ lib/
 ┣ styles/
-┗ App.jsx
+┣ App.jsx
 ┗ main.jsx
 ```
 
