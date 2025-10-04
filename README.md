@@ -1,4 +1,4 @@
-# 🌐 Propel
+# 🌐 Propel - Agency Landing Page
 
 A pixel-perfect implementation of a Figma design using modern frontend tools.
 
