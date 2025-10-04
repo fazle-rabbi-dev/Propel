@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--color-primary: #0f2137;
+	--color-secondary: #02073e;
+	--color-accent: #db4a87;
+	--color-muted: #566272;
+	--color-gray: #343d48;
+	--color-blue: #3183ff;
+
+	--font-dm-sans: "DM Sans", sans-serif;
+	--font-arvo: "Arvo", serif;
+	--font-crimson-text: "Crimson Text", serif;
+
+	--breakpoint-3xl: 100rem;
+}
+
+@layer base {
+	html,
+	body,
+	#root {
+		height: 100%;
+		font-family: var(--font-dm-sans);
+	}
+}
+
+@layer components {
+	.max-width-container {
+		@apply sm:max-w-2xl lg:max-w-[1300px] 2xl:max-w-[1700px] mx-auto;
+	}
+
+	.section-title {
+		@apply font-crimson-text font-semibold text-primary text-[40px] tracking-[-1px] leading-[50px];
+	}
+
+	.section-title-lg {
+		@apply font-crimson-text font-semibold text-primary text-[48px] tracking-[-1px] leading-[60px];
+	}
+
+	.section-sub-title {
+		@apply leading-[35px] text-primary;
+	}
+
+	.section-sub-title-2 {
+		@apply text-[17px] leading-[42px] text-secondary;
+	}
+
+	/* Services/Features */
+	.feature-card-title {
+		@apply text-lg leading-[30px] font-bold text-primary;
+	}
+
+	.text-body {
+		@apply leading-[30px] text-gray;
+	}
+
+	.link-text {
+		@apply font-medium leading-[42px] text-blue;
+	}
+}
+
+@layer utilities {
+	/* Exciting feature */
+	.exciting-feature-card-title {
+		@apply text-[19px] leading-[30px] font-medium text-primary;
+	}
+
+	.exciting-feature-card-text {
+		@apply leading-[32px] text-gray;
+	}
+
+	/* Work hard */
+	.work-hard-list-item {
+		@apply flex items-center gap-[14px] font-medium leading-[45px] text-secondary;
+	}
+
+	/* Blogs */
+	.blog-title {
+		@apply mt-[25px] text-xl font-medium leading-[30px] text-primary;
+	}
+
+	.blog-comment {
+		@apply mt-[20px] flex items-center gap-[7px] font-medium opacity-80 leading-[26px] text-gray;
+	}
+
+	/* Subscription */
+	.subscription-title {
+		@apply text-[36px] font-crimson-text font-bold leading-[55px] tracking-[-.5px] text-primary;
+	}
+
+	.subscription-description {
+		@apply leading-[30px] text-gray;
+	}
+
+	.subscription-question {
+		@apply text-sm leading-[30px] text-[#9095AD];
+	}
+
+	/* Footer */
+	.footer-nav-category {
+		@apply text-lg font-medium leading-[30px] tracking-[-.5px] text-primary;
+	}
+
+	.footer-nav-link-text {
+		@apply text-[15px] leading-[250%] text-secondary opacity-80;
+	}
+
+	/* * For debugging purpose */
+	.b1 {
+		border: 2px solid red;
+	}
+
+	.b2 {
+		border: 2px solid blueviolet;
+	}
+}
